@@ -5,7 +5,7 @@ import Link from "next/link";
 
 type ButtonProps = {
   linkField: string;
-  label: KeyTextField;
+  label: string;
   showIcon?: boolean;
   className?: string;
 };
