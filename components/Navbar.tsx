@@ -1,10 +1,12 @@
 "use client";
+import { navItems } from "@/constants";
 import clsx from "clsx";
 import Link from "next/link";
 
 import { usePathname } from "next/navigation";
 import React, { Fragment, useState } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
+// import Button from "./Button";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -44,28 +46,43 @@ const Navbar = () => {
             >
               <MdClose />
             </button>
-            <Fragment>
-              <li className="first:mt-8">
-                <Link
-                  href="/about"
-                  className={clsx(
-                    "group relative block overflow-hidden rounded px-3 text-3xl font-bold text-slate-900 "
-                  )}
-                  onClick={() => setOpen(false)}
-                >
-                  <span
+            {navItems.map(({ link, label }, index) => (
+              <Fragment key={label}>
+                <li className="first:mt-8">
+                  <Link
+                    href="/about"
                     className={clsx(
-                      "absolute inset-0 z-0 h-full translate-y-12 rounded bg-yellow-300 transition-transform duration-300 ease-in-out group-hover:translate-y-0",
-                      pathname.includes("about")
-                        ? "translate-y-6"
-                        : "translate-y-18"
+                      "group relative block overflow-hidden rounded px-3 text-3xl font-bold text-slate-900 "
                     )}
-                  />
-                  <span className="relative">About</span>
-                </Link>
-              </li>
-            </Fragment>
+                    onClick={() => setOpen(false)}
+                    aria-current={
+                      pathname.includes(link as string) ? "page" : undefined
+                    }
+                  >
+                    <span
+                      className={clsx(
+                        "absolute inset-0 z-0 h-full translate-y-12 rounded bg-yellow-300 transition-transform duration-300 ease-in-out group-hover:translate-y-0",
+                        pathname.includes(link as string)
+                          ? "translate-y-6"
+                          : "translate-y-18"
+                      )}
+                    />
+                    <span className="relative">{label}</span>
+                  </Link>
+                </li>
+                {index < navItems.length - 1 && (
+                  <span
+                    className="hidden text-4xl font-thin leading-[0] text-slate-400 md:inline"
+                    aria-hidden="true"
+                  >
+                    /
+                  </span>
+                )}
+              </Fragment>
+            ))}
+            <li>{/* <Button /> */}</li>
           </div>
+          <DesktopMenu pathname={pathname} />
         </ul>
       </nav>
     </header>
@@ -73,3 +90,43 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+function DesktopMenu({ pathname }: { pathname: string }) {
+  return (
+    <div className="relative z-50 hidden flex-row items-center gap-1 bg-transparent py-0 md:flex">
+      {navItems.map(({ link, label }, index) => (
+        <Fragment key={label}>
+          <li className="">
+            <Link
+              href="/about"
+              className={clsx(
+                "group relative block overflow-hidden rounded px-3 py-1 text-base font-bold text-slate-900"
+              )}
+              aria-current={
+                pathname.includes(link as string) ? "page" : undefined
+              }
+            >
+              <span
+                className={clsx(
+                  "absolute inset-0 z-0 h-full rounded bg-yellow-300 transition-transform  duration-300 ease-in-out group-hover:translate-y-0",
+                  pathname.includes(link as string)
+                    ? "translate-y-6"
+                    : "translate-y-8"
+                )}
+              />
+              <span className="relative">{label}</span>
+            </Link>
+          </li>
+          {index < navItems.length - 1 && (
+            <span
+              className="hidden text-4xl font-thin leading-[0] text-slate-400 md:inline"
+              aria-hidden="true"
+            >
+              /
+            </span>
+          )}
+        </Fragment>
+      ))}
+    </div>
+  );
+}
