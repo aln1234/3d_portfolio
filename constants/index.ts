@@ -5,15 +5,15 @@ export const navItems = [
   },
   {
     label: "Projects",
-    link: "/about",
+    link: "/projects",
   },
   {
     label: "Blog",
-    link: "/about",
+    link: "/blog",
   },
   {
     label: "Contact",
-    link: "/about",
+    link: "/contact",
   },
 ];
 
