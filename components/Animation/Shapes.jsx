@@ -18,9 +18,9 @@ const Shapes = () => {
     <div className="row-span-1 relative row-start-1 -mt-9 aspect-square  md:col-span-1 md:col-start-2 md:mt-0">
       <TooltipProvider>
         <Tooltip delayDuration={0}>
-          <TooltipTrigger className="h-[640px] w-[640px]">
+          <TooltipTrigger className="md:h-[640px] md:w-[640px] h-[100px] w-[100px]">
             <Canvas
-              className="z-0 "
+              className="z-0"
               shadows
               gl={{ antialias: false }}
               dpr={[1, 1.5]}
@@ -40,7 +40,7 @@ const Shapes = () => {
             </Canvas>
           </TooltipTrigger>
           <TooltipContent className="absolute -bottom-[35rem] -left-[2rem] ">
-            <p className="text-xl font-bold">Click Me !</p>
+            <p className="text-2xl text-white  font-bold">Click Me!</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
