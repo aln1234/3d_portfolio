@@ -19,7 +19,7 @@ const Navbar = () => {
             <Link
               href="/"
               aria-label="Home page"
-              className="text-xl font-extrabold tracking-tighter text-slate-900"
+              className="text-2xl font-extrabold tracking-tighter text-slate-900"
             >
               Albin
             </Link>
@@ -100,7 +100,7 @@ function DesktopMenu({ pathname }: { pathname: string }) {
             <Link
               href="/about"
               className={clsx(
-                "group relative block overflow-hidden rounded px-3 py-1 text-base font-bold text-slate-900"
+                "group relative block  overflow-hidden rounded px-3 py-1 text-base font-bold text-slate-900"
               )}
               aria-current={
                 pathname.includes(link as string) ? "page" : undefined

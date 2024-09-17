@@ -61,14 +61,14 @@ const Hero = () => {
 
   return (
     <Bounded ref={component}>
-      <div className="grid min-h-[70vh] grid-cols-1 items-center md:grid-cols-2 gap-[6rem]">
+      <div className="grid min-h-[50vh] grid-cols-1 items-center md:grid-cols-2 gap-[8rem]">
         <Shapes />
         <div className="col-start-1 md:row-start-1 " data-speed=".2">
-          <h1 className="mb-8 text-[7rem] font-extrabold leading-none tracking-tighter">
-            <span className="block text-slate-300">
+          <h1 className="mb-8  font-extrabold leading-none tracking-tighter">
+            <span className="block text-[8rem] text-slate-300">
               {renderLetters("Albin", "first")}
             </span>
-            <span className="-mt-[.0em] block text-slate-500  ">
+            <span className="-mt-[.0em] text-[5rem] block text-slate-500  ">
               {renderLetters("Lamichhane", "last")}
             </span>
           </h1>

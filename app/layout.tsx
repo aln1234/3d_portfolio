@@ -19,10 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-slate-900">
-      <body className={clsx(urbanist.className, "relative min-h-screen")}>
+      <body className={clsx(urbanist.className, "relative")}>
         <Navbar />
         {children}
-        <div className="background-gradient absolute inset-0 -z-50 max-h-screen" />
+        <div className="background-gradient absolute inset-0 -z-50" />
         <div className="pointer-events-none absolute inset-0 -z-40 h-full bg-[url('/texture.jpg')] bg-cover opacity-20 mix-blend-soft-light"></div>
         <Footer />
       </body>
