@@ -31,3 +31,13 @@ export const socialLinks = [
     link: "https://www.facebook.com/alvin.lamichhane.7",
   },
 ];
+
+export const techList = [
+  {
+    label: "React",
+    color: "#a29bfe",
+  },
+  { label: "Next.JS", color: "#e17055" },
+  { label: "GSAP", color: "#00b894" },
+  { label: "Tailwind", color: "#fdcb6e" },
+];
