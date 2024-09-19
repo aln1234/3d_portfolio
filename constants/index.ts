@@ -41,3 +41,20 @@ export const techList = [
   { label: "GSAP", color: "#00b894" },
   { label: "Tailwind", color: "#fdcb6e" },
 ];
+
+export const Exerience = [
+  {
+    title: "Frontend Developer",
+    Company: "Naxa Inc",
+    time: "2 March 2022 - 5 Aug 2022",
+    content:
+      "As a Front-end Developer, I contributed to a landslide risk management system by creating React components and transforming Figma designs into a user-friendly interface. I also implemented CRUD operations for efficient data management.",
+  },
+  {
+    title: "Frontend Developer",
+    Company: "Spell Innovation",
+    time: "15 Sept 2020 - 14 April 2021",
+    content:
+      "I developed 10+ responsive interfaces using React for e-commerce and education clients, collaborating with teams to tailor applications to user needs. I maintained version control with Git, documented code changes, and prioritized web accessibility for inclusivity.",
+  },
+];

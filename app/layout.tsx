@@ -23,7 +23,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <div className="background-gradient absolute inset-0 -z-50" />
-        <div className="pointer-events-none absolute inset-0 -z-40 h-full bg-[url('/texture.jpg')] bg-cover opacity-20 mix-blend-soft-light"></div>
+        <div className="pointer-events-none absolute inset-0 -z-40 h-full bg-[url('/noisetexture.jpg')]  opacity-20 mix-blend-soft-light"></div>
         <Footer />
       </body>
     </html>
