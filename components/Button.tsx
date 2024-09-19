@@ -1,5 +1,5 @@
 import React from "react";
-import { MdArrowOutward } from "react-icons/md";
+import { MdArrowOutward } from "react-icons/md"; //added button props
 import clsx from "clsx";
 import Link from "next/link";
 
