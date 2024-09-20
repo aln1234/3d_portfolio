@@ -90,20 +90,20 @@ function Geometries() {
 
   const materials = [
     new THREE.MeshNormalMaterial(),
-    new THREE.MeshStandardMaterial({ color: 0x2ecc71, roughness: 0 }),
-    new THREE.MeshStandardMaterial({ color: 0xf1c40f, roughness: 0.4 }),
-    new THREE.MeshStandardMaterial({ color: 0xe74c3c, roughness: 0.1 }),
-    new THREE.MeshStandardMaterial({ color: 0x8e44ad, roughness: 0.1 }),
-    new THREE.MeshStandardMaterial({ color: 0x1abc9c, roughness: 0.1 }),
+    new THREE.MeshStandardMaterial({ color: 0x1289a7, roughness: 0 }),
+    new THREE.MeshStandardMaterial({ color: 0xffc312, roughness: 0.4 }),
+    new THREE.MeshStandardMaterial({ color: 0xee5a24, roughness: 0.1 }),
+    new THREE.MeshStandardMaterial({ color: 0x9980fa, roughness: 0.1 }),
+    new THREE.MeshStandardMaterial({ color: 0xb53471, roughness: 0.1 }),
     new THREE.MeshStandardMaterial({
       roughness: 0,
-      metalness: 0.5,
-      color: 0x2980b9,
+      metalness: 0.7,
+      color: 0x1b1464,
     }),
     new THREE.MeshStandardMaterial({
-      color: 0x2c3e50,
-      roughness: 0.1,
-      metalness: 0.5,
+      color: 0xa3cb38,
+      roughness: 0.8,
+      metalness: 0.7,
     }),
   ];
 
