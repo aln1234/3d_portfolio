@@ -32,7 +32,11 @@ const Bio = () => {
             as a Frontend Developer with a genuine passion for the world of data
             science.
           </p>
-          <Button linkField="hello" label="Resume" className="mt-12" />
+          <Button
+            linkField="https://pdfhost.io/v/K20dwlEz9_Lamichhane_Albin_Developer"
+            label="Resume"
+            className="mt-12"
+          />
         </div>
         <Avatar />
       </div>
