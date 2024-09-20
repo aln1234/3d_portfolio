@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa6";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -11,12 +12,18 @@ const Footer = () => {
             href="/"
             className="text-xl font-extrabold tracking-lighter text-slate-100 transition-colors duration-150 hover:text-yellow-400"
           >
-            Albin Lamichhane
+            <Image
+              src="/footer_logo.png"
+              alt="logo"
+              height={100}
+              width={150}
+              className=""
+            />
           </Link>
           <span className="hidden text-5xl font-extralight leading[0] text-slate-400 sm:inline">
             /
           </span>
-          <p className="text-sm text-slate-300">
+          <p className="text-base text-slate-300">
             © {new Date().getFullYear()} Albin Lamichhane
           </p>
         </div>

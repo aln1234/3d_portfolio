@@ -1,6 +1,7 @@
 "use client";
 import { navItems } from "@/constants";
 import clsx from "clsx";
+import Image from "next/image";
 import Link from "next/link";
 
 import { usePathname } from "next/navigation";
@@ -21,7 +22,13 @@ const Navbar = () => {
               aria-label="Home page"
               className="text-2xl font-extrabold tracking-tighter text-slate-900"
             >
-              Albin
+              <Image
+                src="/logo.png"
+                alt="logo"
+                height={50}
+                width={100}
+                className=""
+              />
             </Link>
             <button
               className="block p-2 text-2xl text-slate-800 md:hidden"

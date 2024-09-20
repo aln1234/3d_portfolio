@@ -20,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-slate-900">
+      <head>
+        <link rel="icon" href="/logo_2.png" sizes="any" />
+      </head>
       <body className={clsx(urbanist.className, "relative")}>
         <Navbar />
         {children}
