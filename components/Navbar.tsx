@@ -98,7 +98,7 @@ function DesktopMenu({ pathname }: { pathname: string }) {
         <Fragment key={label}>
           <li className="">
             <Link
-              href="/about"
+              href={link}
               className={clsx(
                 "group relative block  overflow-hidden rounded px-3 py-1 text-base font-bold text-slate-900"
               )}

@@ -5,7 +5,7 @@ export const navItems = [
   },
   {
     label: "Projects",
-    link: "/projects",
+    link: "/project",
   },
   {
     label: "Blog",
@@ -73,5 +73,37 @@ export const educationList = [
     time: "4 Aug 2016 - 8 Apr 2020",
     content:
       "Completed a Bachelor's degree in Computer Science with a focus on foundational programming concepts, algorithms, and web development. Developed a strong understanding of software development principles.",
+  },
+];
+
+export const projectList = [
+  {
+    title: "AI Companion",
+    tech: "Next Js, Tailwind Css, Cloudinary API",
+    image: "/projects/project_1.png",
+    link: "https://ai-sass-henna.vercel.app/",
+  },
+  {
+    title: "Architect Website",
+    tech: "React Js, Node Js",
+    image: "/projects/project_2.png",
+  },
+  {
+    title: "Intruder Detection System",
+    tech: "COCO Model,Javascript, Next js, Taillwind, Tensorflow.js",
+    image: "/projects/project_3.png",
+    link: "https://intruder-detection-system.vercel.app/",
+  },
+  {
+    title: "Buy Ecommerce",
+    tech: "React Js, Node Js",
+    image: "/projects/project_4.png",
+    link: "https://fs16-6-frontend-project-chi.vercel.app/",
+  },
+  {
+    title: "Cartoonify",
+    tech: "Next Js, Tensorflow Js",
+    image: "/projects/project_5.png",
+    link: "https://cartoonify-phi.vercel.app/",
   },
 ];
