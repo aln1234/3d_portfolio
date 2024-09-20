@@ -4,7 +4,6 @@ import React, { useRef, useState, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MdArrowOutward } from "react-icons/md";
-import { projectList } from "@/constants";
 import { Content } from "@/types";
 
 gsap.registerPlugin(ScrollTrigger);
