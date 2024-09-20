@@ -124,7 +124,7 @@ const ContentList = ({ data }: ContentList) => {
                     <span className="text-lg font-bold">{item.tech}</span>
                   </div>
                 </div>
-                <span className="ml-auto flex items-center gap-2 text-xl font-medium md:ml-0">
+                <span className="ml-auto flex items-center gap-2 text-xl font-medium md:ml-0 cursor-pointer hover:bg-white hover:px-4 hover:py-2 hover:rounded-md hover:text-slate-800">
                   View Project <MdArrowOutward />
                 </span>
               </a>
