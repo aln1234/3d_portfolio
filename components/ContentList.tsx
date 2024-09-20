@@ -5,10 +5,15 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MdArrowOutward } from "react-icons/md";
 import { projectList } from "@/constants";
+import { Content } from "@/types";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ContentList = () => {
+type ContentList = {
+  data: Content[];
+};
+
+const ContentList = ({ data }: ContentList) => {
   const component = useRef(null);
   const itemsRef = useRef<Array<HTMLLIElement | null>>([]);
 
@@ -19,7 +24,7 @@ const ContentList = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      itemsRef.current.forEach((item, index) => {
+      itemsRef.current.forEach((item) => {
         gsap.fromTo(
           item,
           {
@@ -93,7 +98,7 @@ const ContentList = () => {
   };
 
   // Use projectList directly
-  const contentImages = projectList.map((project) => project.image);
+  const contentImages = data.map((project) => project.image);
 
   return (
     <>
@@ -102,7 +107,7 @@ const ContentList = () => {
         className="grid border-b border-b-slate-100"
         onMouseLeave={onMouseLeave}
       >
-        {projectList.map((item, index) => (
+        {data.map((item, index) => (
           <>
             <li
               key={index}

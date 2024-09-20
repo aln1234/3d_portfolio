@@ -11,10 +11,6 @@ export const navItems = [
     label: "Blog",
     link: "/blog",
   },
-  {
-    label: "Contact",
-    link: "/contact",
-  },
 ];
 
 export const socialLinks = [
@@ -105,5 +101,35 @@ export const projectList = [
     tech: "Next Js, Tensorflow Js",
     image: "/projects/project_5.png",
     link: "https://cartoonify-phi.vercel.app/",
+  },
+];
+
+export const blogList = [
+  {
+    title: "How to Run Code Llama on Your Computer with Ollama",
+    tech: "Data Science",
+    image: "/blog/llama.png",
+    link: "https://medium.com/@albinlamichhane9/how-to-run-code-llama-on-your-computer-with-ollama-14cf66e2da89",
+  },
+  {
+    title:
+      "Adding One-Time Passwords (OTPs) to Your Next.js App with Tailwind CSS and Shadcn UI",
+    tech: "React Js",
+    image: "/blog/otp.png",
+    link: "https://medium.com/@albinlamichhane9/adding-one-time-passwords-otps-to-your-next-js-app-with-tailwind-css-and-shadcn-ui-8cc3bcdef08b",
+  },
+  {
+    title:
+      "Unleashing the Power of PixelCNN: Generating Handwritten Digits from Scratch",
+    tech: "Data Science",
+    image: "/blog/handwriting.png",
+    link: "https://medium.com/@albinlamichhane9/unleashing-the-power-of-pixelcnn-generating-handwritten-digits-from-scratch-ebc6c63847d6",
+  },
+  {
+    title:
+      "How to Add SMS Notifications to Your React App with Twilio and Appwrite",
+    tech: "React Js",
+    image: "/blog/sms.png",
+    link: "https://medium.com/@albinlamichhane9/how-to-add-sms-notifications-to-your-react-app-with-twilio-and-appwrite-124fb2261d6c",
   },
 ];
